@@ -16,7 +16,9 @@ public final class TeleportIdFix extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
+        getConfig().addDefault("offset", 12345);
+        getConfig().options().copyDefaults(true);
+        saveConfig();
         int offset = getConfig().getInt("offset");
 
         Certificate[] certs = TeleportIdFix.class.getProtectionDomain().getCodeSource().getCertificates();
