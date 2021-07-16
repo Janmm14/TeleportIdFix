@@ -4,5 +4,5 @@ description: ${project.description}
 author: ${pluginyml.author}
 main: ${bukkit.pluginyml.main}
 load: STARTUP
-softdepend: [ProtocolLib]
+depend: [ ProtocolLib ]
 api-version: 1.13
