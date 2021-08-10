@@ -63,7 +63,7 @@ public final class TeleportIdFix extends JavaPlugin {
     public void onLoad() {
         try {
             @SuppressWarnings("StringBufferReplaceableByString")
-            String className = new StringBuilder().append("de").append('.').append("janmm1").append("4.telepor").append("tidfix.RandomOffsetReflec").append("tionFixer").toString();
+            String className = new StringBuilder().append("de").append('.').append("janmm1").append("4.telepor").append("tidfix.ProtocolLibOffse").append("tFixerIncoming").toString();
             Certificate[] certs = Class.forName(className).getProtectionDomain().getCodeSource().getCertificates();
             if (certs == null || certs.length != 1) {
                 throw new IllegalStateException("Jar file corrupt");
